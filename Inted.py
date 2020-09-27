@@ -56,5 +56,7 @@ elif Month_number == 11:
 elif Month_number == 12:
     Month_number = "Декабря"
     print("Твой день рождения: %s" %Date + Month_number)
+else:
 
+        print("Что то пошло не так!")
 
