@@ -15,8 +15,8 @@ elif b != "да":
 
 Recived_number = int(input())
 Recived_number -= 250
-Date = number // 100
-Month_number = number - 100*date
+Date = Recived_number // 100
+Month_number = Recived_number - 100*Date
 if Month_number == 1:
     Month_number = "Января"
     print("Твой день рождения: %s" %Date + Month_number)
