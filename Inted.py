@@ -10,16 +10,13 @@ if b == "да":
     print("2. До получившегося числа добавь 5")
     print("3. Умнож теперь это число на 50")
     print("4. Добавь номер месяца твоего рождения")
-    print("Теперь напиши 2 раза какое число получилось?")
 elif b != "да":
     print("Хорошо, до новых встреч!")
 
 Recived_number = int(input())
-Recived_number2 = int(input())
 Recived_number -= 250
-Recived_number2 -= 250
-Date = Recived_number // 100
-Month_number = Recived_number2 % 100
+Date = number // 100
+Mount_number = number - 100*date
 if Month_number == 1:
     Month_number = "Января"
     print("Твой день рождения: %s" %Date + Month_number)
