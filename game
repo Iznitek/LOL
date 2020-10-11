@@ -1,0 +1,19 @@
+import random
+c = 0
+print("если угадали вы получаете 2 балл если ваше число отличаеться на 1 от моего д ")
+for Round in range(1, 6):
+    print("РАУНД %s" %Round)
+    print("Ваш ответ")
+    x = int(input())
+    y = random.randint(1, 5)
+    print("Загаданное число %s" %y)
+    print()
+    if x == y:
+        c += 2
+    elif x - y == -1:
+        c += 1
+    elif x - y == 1:
+        c += 1
+print("Поздравляем вы заработали %s балла " %c)
+if c <= 0:
+    print("Как ты играешь?")
